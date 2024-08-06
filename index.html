@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Contact List</title>
+</head>
+<body>
+       
+    <h1 class="text-center">Contact List</h1>
+        <br />
+    <div class="form-inline">
+            <div class="form-input">
+                <div class="form-label">Name:</div> 
+                <input placeholder="Name..." class="form-control" id="inputName" />
+            </div>
+            <div class="form-input">
+                <div class="form-label">Last Name: </div>
+                <input placeholder="Last Name..." class="form-control" id="inputLastName" />
+            </div>
+            <div class="form-input">
+                <div class="form-label">Email: </div>
+                <input placeholder="Email Address..." class="form-control" id="inputEmail" />
+            </div>
+            <div class="form-input">
+                <div class="form-label">City: </div>
+                <input placeholder="City..." class="form-control" id="inputCity" />
+            </div>
+            <div class="form-input">
+                <div class="form-label">Province: </div>
+                <input placeholder="Province..." class="form-control" id="inputProvince" />
+            </div>
+       
+          <div id="submitButtons"><button type="button" class="btn btn-info" onclick="addNewContact()">Submit</button></div>
+      </div>
+
+      <div class="form-table">
+        <h3>My Contacts</h3>
+        <table id="displayContacts" class="table"></table>
+      </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
